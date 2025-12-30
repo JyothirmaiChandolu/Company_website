@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import { Target, Eye, Award, Users, Globe, TrendingUp, Mail, Linkedin } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import img1 from '../../../src/assets/MHK_logo1_new.svg'
+import img2 from '../../../src/assets/rajesh.jpeg'
 
 const values = [
   { icon: Target, title: 'Innovation', description: 'Pushing boundaries with cutting-edge technology' },
@@ -69,7 +71,7 @@ export function WhoWeAre() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-2xl bg-white p-8"
             >
               <ImageWithFallback
-                src="/src/assets/MHK_logo1_new.svg"
+                src={img1}
                 alt="MHK Tech Inc Logo"
                 className="w-full h-full object-contain"
               />
@@ -198,7 +200,7 @@ export function WhoWeAre() {
               {/* CEO Image */}
               <div className="md:col-span-2 relative h-96 md:h-auto">
                 <ImageWithFallback
-                  src="/src/assets/rajesh.jpeg"
+                  src={img2}
                   className="w-full h-full object-cover"
                 />
               </div>

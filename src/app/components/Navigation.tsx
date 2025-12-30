@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import { Chatbot } from './Chatbot';
+import img1 from '../../../src/assets/MHK_logo1_new.svg'
 
 export function Navigation() {
   const location = useLocation();
@@ -39,7 +40,7 @@ export function Navigation() {
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="src/assets/MHK_logo1_new.svg" 
+                src={img1}
                 alt="MHK Tech Inc Logo" 
                 className="h-12 w-auto object-contain"
               />

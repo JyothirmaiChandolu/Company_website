@@ -1,5 +1,10 @@
 import { motion } from 'motion/react';
 import { Calendar, MapPin, Clock, Users, Image as ImageIcon } from 'lucide-react';
+import img1 from '../../../src/assets/team.jpeg'
+import img2 from '../../../src/assets/toreo.png'
+import img3 from '../../../src/assets/drives2.jpeg'
+import img4 from '../../../src/assets/team_dinner.jpeg'
+import img5 from '../../../src/assets/christmas.jpeg'
 
 // Fallback component for images
 function ImageWithFallback({ src, alt, className }: { src: string; alt: string; className: string }) {
@@ -26,7 +31,7 @@ const events = [
     description: 'Join us for a full day of insights into the latest trends in data engineering, AI, and analytics. Network with industry leaders and discover innovative solutions that are shaping the future of data management.',
     attendees: '50+ Attendees',
     category: 'Conference',
-    image: '/src/assets/team.jpeg',
+    image: img1,
     isPast: true
   },
   {
@@ -38,7 +43,7 @@ const events = [
     description: 'Be part of history as we officially launch Toreo Data to the world. Experience live demonstrations, meet our product team, and discover how Toreo Data can transform your data integration challenges.',
     attendees: '200+ Expected',
     category: 'Product Launch',
-    image: '/src/assets/toreo.png',
+    image: img2,
     isPast: true
   },
   {
@@ -50,7 +55,7 @@ const events = [
     description: 'Join our campus recruitment drive to discover exciting career opportunities at MHK Tech Inc. We\'re looking for talented individuals to join our growing team across various departments.',
     attendees: '300+ Expected',
     category: 'Recruitment',
-    image: '/src/assets/drives2.jpeg',
+    image: img3,
     isPast: true
   },
   {
@@ -62,7 +67,7 @@ const events = [
     description: 'An exclusive evening for AI professionals and business leaders to discuss the impact of artificial intelligence on modern business. Enjoy fine dining while connecting with peers and thought leaders in the AI space.',
     attendees: '10+ Gathered',
     category: 'Networking',
-    image: '/src/assets/team_dinner.jpeg',
+    image: img4,
     isPast: true
   },
   {
@@ -74,7 +79,7 @@ const events = [
     description: 'Our team gathered at our workplace and celebrated Christmas day with various fun activities, games, and festivities. A wonderful day of team bonding and holiday cheer!',
     attendees: '10+ Team Members',
     category: 'Celebration',
-    image: '/src/assets/christmas.jpeg',
+    image: img5,
     isPast: true
   }
 ];

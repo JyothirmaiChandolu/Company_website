@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Database, Play, CheckCircle, X } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { useState } from 'react';
+import img1 from '../../../src/assets/toreo_data.jpeg'
 
 export function Products() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -41,7 +42,7 @@ export function Products() {
               <div className="w-full max-w-md h-64 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl flex items-center justify-center border-2 border-blue-200 overflow-hidden">
                 {/* Replace this with your Toreo Data logo */}
                 <img 
-                  src="/src/assets/toreo_data.jpeg" 
+                  src={img1}
                   alt="Toreo Data Logo" 
                   className="w-full h-full object-contain p-8"
                 />
@@ -134,7 +135,7 @@ export function Products() {
                 {/* Video Thumbnail */}
                 <div className="relative w-full h-72 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl">
                   <ImageWithFallback
-                    src="/src/assets/toreo_data.jpeg"
+                    src={img1}
                     alt="Video thumbnail"
                     className="w-full h-full object-cover opacity-60"
                   />
